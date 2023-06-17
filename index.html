@@ -53,23 +53,124 @@
     👉 Part 1 of 2 👈
     Work through the tasks until the boxes match the `task-1.png` design inside the `design` folder.
     Making changes to the HTML is not allowed! The tasks must be completed using CSS alone.
+
+    
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    [id^=flexContainer] {
+      display: flex;
+    }
+
+
+    div #flexContainer1 {
+      display: flex;
+      justify-content: space-evenly;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3 {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    #flexContainer4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+
+    #flexContainer4 .flexItem:nth-child(3) {
+      order: -1;
+    }
 
     /* 👉 Task 5 - [HINT] research align-self */
 
+    #flexContainer5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between ;
+    }
+    #flexContainer5 .flexItem:nth-child(1) {
+      order: -1;
+    }
+    #flexContainer5 .flexItem:nth-child(2) {
+      order: -1;
+    }
+
+    #flexContainer5 .flexItem:nth-child(2) {
+      align-self: center;
+    }
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+
+    #flexContainer6 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items:flex-end;
+      justify-content: flex-end;
+    }
+
+    #flexContainer6 .flexItem:nth-child(3) {
+      align-self: flex-start;
+    }
+    #flexContainer6 .flexItem:nth-child(2) {
+      align-items: flex-end;
+      align-self: flex-end;
+    }
+
+    #flexContainer6 .flexItem:nth-child(1) {
+      justify-content: flex-end ;
+    } 
 
     /* 👉 Task 7 - [HINT] research flex-grow */
 
+    #flexContainer7 {
+      display: flex;
+    }
+
+     #flexContainer7 .flexItem:nth-child(3) {
+      flex-grow: 1;
+    } 
+    #flexContainer7 .flexItem:nth-child(2) {
+      align-items: center;
+      align-self: flex-start;
+    }
+
+    #flexContainer7 .flexItem:nth-child(1) {
+      align-items: center;
+      justify-content: center;
+    }  
+
     /* 👉 Task 8 - [HINT] you got this! */
+    #flexContainer8 {
+      justify-content: space-between;
+    }
+
+    #flexContainer8 .flexItem:nth-child(1) {
+      justify-content:flex-end ;
+    }
+
+    #flexContainer8 .flexItem:nth-child(2) {
+      align-self: center;
+    }
+
+      #flexContainer8 .flexItem:nth-child(3) {
+      align-self: flex-end;
+      justify-content: space-between;
+     }  
+  
 
 
     /*
